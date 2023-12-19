@@ -1,46 +1,50 @@
 *{
     margin: 0px;
     padding: 0px;
-   background-color: rgb(255, 246, 246);
+   /* background-color: rgb(255, 246, 246); */
 
    
 }
+body{
+    background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31915164.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-color: rgb(22, 21, 21);
+    background-blend-mode: overlay;
+    /* backdrop-filter: blur(5px) */
+}
 
 .header{
-  
     height: 70px;
    
 }
 #name{
     text-align: center;
     padding-top: 30px;
-    font-size: 28px;
+    font-size: 70px;
     font-style: italic;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 
 }
 
 
 
-#images{
-    height: 400px;
-    width: 1700px;
-    filter: blur(3px) ;
-} 
 
 
 .text{
     height: 300px;
-    color: rgb(0, 0, 0);
+    color: rgb(178, 187, 55);
     text-align: center;
     width:890px;
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top: 40px;
-   
-    border-radius: 10px;
+   border-radius: 10px;
+   font-weight: bolder;
+   font-style: oblique;
+   font-family: Georgia, 'Times New Roman', Times, serif;
     
     
 
@@ -52,62 +56,193 @@
     width: 370px;
     border-radius: 10px;
     border-width: 5px;
-    border-color: rgb(2, 2, 2);
+    border-color: rgb(207, 178, 178);
     text-decoration: rgb(231, 231, 231);
-    background-color: rgb(230, 206, 206);
+    /* background-color: rgb(230, 206, 206); */
 }
 
-#randomimage{
-    margin-left: 660px;
+#randommealimage{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 250px;
+    width: 250px;
+    /* border: 10px; */
+    border:3px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
  
 }
-p{
-    margin-left: 730px;
-    margin-top: 20px;
+#nameofdish{
+    margin-left: 30px;
+    margin-top: 5px;
     font-size: larger;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
-    color: rgb(0, 0, 0);
-}
-#textinfo{
-    color: rgb(0, 0, 0);
+  
 }
 
-#randomimage1{
-    margin-left: 20px;
+#search{
+    height: 90px;
+    width: 50px;
+    border-radius: 5px;
+
+}
+
+#latest{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+}
+
+#latest img{
+    width:300px;
+    margin-top: 70px;
     border-radius: 10px;
-}
+    border:5px solid black;
 
-#randomimage2{
-    margin-left: 20px;
-    border-radius: 10px;
-    height: 172px;
-    width: 290px;
 }
+button{
+  height: 50px;
+  width: 55px;
+  border-radius: 5px;
+ }
+ 
+ .mainmodal{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 
-#randomimage3{
-    margin-left: 20px;
-    border-radius: 10px;
-    height: 172px;
-    width: 290px;
-}
+ #modal{
+    height: 350px;
+    width: 350px;
+    background-color: beige;
+    color: black;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: none;
+ }
 
-#randomimage4{
-    margin-left: 20px;
-    border-radius: 10px;
-    height: 172px;
-    width: 290px;
-}
+ H2{
+    text-align: center;
+    margin-top: 20px;
+ }
 
 
-#randomimage5{
-    margin-left: 20px;
-    border-radius: 10px;
-    height: 172px;
-    width: 290px;
-}
-.latest{
-    background-color: blanchedalmond;
-    margin-top: 50px;
-    height: 190px;
-}
+ @media only screen and (max-width: 900px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+       /* background-color: rgb(255, 246, 246); */
+    
+       
+    }
+    body{
+        background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31915164.jpg');
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-color: rgb(22, 21, 21);
+        background-blend-mode: overlay;
+        /* backdrop-filter: blur(5px) */
+    }
+    
+    .header{
+        height: 70px;   
+       
+    }
+    #name{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 27px;
+        font-style: italic;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        margin-right: -22px;
+    
+    }
+    
+    
+    
+    
+    
+    .text{
+        height: 300px;
+        color: rgb(178, 187, 55);
+        text-align: center;
+        width:308px;
+        margin-left: 40px;
+        margin-top: 10px;
+       border-radius: 10px;
+       font-weight: bolder;
+       font-style: oblique;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        
+    
+    
+    }
+    #placeholder{
+        margin-top: 40px;
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        border-width: 5px;
+        border-color: rgb(207, 178, 178);
+        text-decoration: rgb(231, 231, 231);
+        /* background-color: rgb(230, 206, 206); */
+    }
+    
+    #randommealimage{
+        margin-left: 16px;
+        margin-right: 150px;
+        height: 250px;
+        width: 227px;
+        /* border: 10px; */
+        border:3px solid black;
+        border-radius: 10px;
+        margin-top: 50px;
+     
+    }
+    #nameofdish{
+        margin-left: -30px;
+        margin-top: 5px;
+        font-size: larger;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: blue;
+      
+    }
+    
+    #search{
+        height: 90px;
+        width: 50px;
+        border-radius: 5px;
+    
+    }
+    
+    #latest{
+        display: grid;
+        grid-template-columns: auto auto ;
+        column-gap: 20px;
+    }
+    
+    #latest img{
+        width:100px;
+        margin-top: 70px;
+        border-radius: 10px;
+        border:5px solid black;
+    
+    }
+    button{
+      height: 40px;
+      width: 50px;
+      border-radius: 5px;
+     }
+ }
