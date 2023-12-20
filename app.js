@@ -1,9 +1,12 @@
 let el;
+
+//giving functinality to the close button of the modal
 const closeBtn = document.getElementById("closeBtn");
 closeBtn.addEventListener('click',function(){
     modal.style.display = "none";
 })
 
+//using API key by fetch method to diaplay the randomimage
 async function randomimage() {
     try {
         const output = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
@@ -21,6 +24,7 @@ async function randomimage() {
     }
 }
 
+//giving functionality of random meal image
 function updationofimage(imageUrl, imagename) {
     const randommealimage = document.getElementById('randommealimage');
     const nameofdish = document.getElementById('nameofdish');
@@ -28,6 +32,7 @@ function updationofimage(imageUrl, imagename) {
     nameofdish.innerText = imagename;
 }
 
+// giving refresh functionality
 async function refresh() {
     const { imageUrl, imagename } = await randomimage();
     updationofimage(imageUrl, imagename);
@@ -35,6 +40,7 @@ async function refresh() {
 
 window.onload = refresh;
 
+// giving input box the API key so that the searched category will be displayed
 async function placeholder() {
     const inputbox = document.getElementById('placeholder').value;
     const API = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${inputbox}`;
@@ -49,6 +55,7 @@ async function placeholder() {
     }
 }
 
+// assigning the function to display the  meals
 function display(Meals) {
     const results = document.getElementById('latest');
     results.innerHTML = '';
@@ -66,6 +73,8 @@ function display(Meals) {
         results.appendChild(displayresult);
     });
 }
+
+//MODAL
 const randommealimage=document.getElementById('randommealimage')
 const modal= document.getElementById('modal');
 const unorderedlist= document.getElementById('unorderedlist');
@@ -91,9 +100,10 @@ async function modalingredients(el){
     console.log("error in fetching data",error)
   }
 }
+//onlclick to the image so that ingredients will be displayed
 console.log(randommealimage)
 randommealimage.addEventListener('click',function(){
-    console.log("Hello")
+    // console.log("Hello")
     modalingredients(el)
     modal.style.display = "block";
 

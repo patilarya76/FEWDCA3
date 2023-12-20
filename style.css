@@ -1,19 +1,20 @@
 *{
     margin: 0px;
     padding: 0px;
-   /* background-color: rgb(255, 246, 246); */
-
-   
 }
+
+
 body{
     background:linear-gradient(rgb(77, 36, 78), rgb(24, 23, 24));
     background-size: 100vw 100vh;
 }
 
+
 .header{
     height: 70px;
-   
 }
+
+
 #name{
     text-align: center;
     padding-top: 30px;
@@ -22,17 +23,14 @@ body{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    
-
 }
+
+
 #Recently{
     color: rgb(218, 214, 214);
     margin-top: 20px;
     font-size: larger;
 }
-
-
-
 
 .text{
     height: 300px;
@@ -45,11 +43,9 @@ body{
    font-weight: bolder;
    font-style: oblique;
    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    
-
-
 }
+
+
 #placeholder{
     margin-top: 40px;
     height: 40px;
@@ -58,35 +54,33 @@ body{
     border-width: 5px;
     border-color: rgb(207, 178, 178);
     text-decoration: rgb(231, 231, 231);
-    /* background-color: rgb(230, 206, 206); */
 }
+
 
 #randommealimage{
     margin-left: 100px;
     margin-right: 100px;
     height: 250px;
     width: 250px;
-    /* border: 10px; */
     border:3px solid black;
     border-radius: 10px;
     margin-top: 50px;
- 
 }
+
+
 #nameofdish{
     margin-left: 30px;
     margin-top: 5px;
     font-size: larger;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
-  
 }
+
 
 #search{
     height: 90px;
     width: 50px;
     border-radius: 5px;
-    /* background-color: orange; */
-
 }
 
 #latest{
@@ -95,22 +89,25 @@ body{
     column-gap: 50px;
 }
 
+
 #latest img{
     width:300px;
     margin-top: 70px;
     border-radius: 10px;
     border:5px solid black;
-
 }
+
+
 button{
   height: 50px;
   width: 55px;
   border-radius: 5px;
   background-color: orange;
   margin-right: 20px;
- }
+}
  
- .mainmodal{
+
+.mainmodal{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -119,12 +116,15 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
+
+
 #temp{
     position: relative;
-
 }
- #modal{
+
+
+#modal{
     height: 450px;
     width: 350px;
     background-color: rgb(167, 167, 89);
@@ -138,25 +138,33 @@ button{
     left: 16vw;
 }
 
+
 #unorderedlist{
     text-align: left;
     margin-left: 8vw;
     margin-top: 2vw;
 }
 
+
 H2{
     text-align: center;
     margin-top: 20px;
     margin-left:90px;
 }
+
+
 .ingredients{
     display: flex;
     justify-content: space-between;
 }
+
+
 .ingredients img{
     width:50px;
 
 }
+
+
 #logo{
     width: 80px;
     height: 80px;
@@ -165,23 +173,21 @@ H2{
 }
 
 
+/* Responnsive  */
 
  @media only screen and (max-width: 900px) {
     .header{
         height: 60px;
        
     }
+
+
     #name{
         text-align: center;
         padding-top: 26px;
         font-size: 33px;
-     
-    
-    }
-    
-    
-    
-    
+     }
+
     
     .text{
         height: 300px;
@@ -191,26 +197,25 @@ H2{
         margin-left: 17px;
         margin-top: 40px;
         font-size: 15px;
-       /* border-radius: 10px; */
-     
-        
-        
-    
-    
     }
+
+
     #Recently{
         color: rgb(218, 214, 214);
         margin-top: 20px;
         font-size: larger;
     }
+
+
     #placeholder{
         margin-top: 40px;
         height: 40px;
         width: 260px;
         border-radius: 10px;
         border-width: 5px;
-     
     }
+
+
     
     #randommealimage{
         margin-left: 46px;
@@ -220,23 +225,21 @@ H2{
         border:3px solid black;
         border-radius: 10px;
         margin-top: 27px;
-        
-     
     }
+
+
     #nameofdish{
         margin-left: 91px;
         margin-top: 5px;
-       
-      
     }
+
     
     #search{
         height: 90px;
         width: 50px;
         border-radius: 5px;
-     
-    
     }
+
     
     #latest{
         display: grid;
@@ -244,6 +247,7 @@ H2{
         column-gap: 20px;
     }
     
+
     #latest img{
         width:100px;
         margin-top: 70px;
@@ -252,7 +256,7 @@ H2{
     
     }
     
-     
+
     .mainmodal{
         position: absolute;
         top: 0px;
@@ -262,12 +266,15 @@ H2{
         display: flex;
         align-items: center;
         justify-content: center;
-     }
+    }
+
+
     #temp{
         position: relative;
-    
     }
-     #modal{
+
+
+    #modal{
         height: 450px;
         width: 350px;
         background-color: rgba(223, 119, 119, 0.836);
