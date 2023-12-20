@@ -25,7 +25,11 @@ body{
     
 
 }
-
+#Recently{
+    color: rgb(218, 214, 214);
+    margin-top: 20px;
+    font-size: larger;
+}
 
 
 
@@ -182,39 +186,45 @@ H2{
     .text{
         height: 300px;
         color: rgb(178, 187, 55);
-        text-align: center;
-        width:429px;
-        margin-left: -1px;
+        text-align: left;
+        width:350px;
+        margin-left: 17px;
         margin-top: 40px;
-       border-radius: 10px;
+        font-size: 15px;
+       /* border-radius: 10px; */
      
         
         
     
     
     }
+    #Recently{
+        color: rgb(218, 214, 214);
+        margin-top: 20px;
+        font-size: larger;
+    }
     #placeholder{
         margin-top: 40px;
         height: 40px;
-        width: 321px;
+        width: 260px;
         border-radius: 10px;
         border-width: 5px;
      
     }
     
     #randommealimage{
-        margin-left: 83px;
+        margin-left: 46px;
         margin-right: 100px;
         height: 250px;
         width: 250px;
         border:3px solid black;
         border-radius: 10px;
-        margin-top: 35px;
+        margin-top: 27px;
         
      
     }
     #nameofdish{
-        margin-left: 11px;
+        margin-left: 91px;
         margin-top: 5px;
        
       

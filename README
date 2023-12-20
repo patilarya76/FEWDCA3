@@ -1,0 +1,43 @@
+ # FEWDCA3
+
+ # PINCH OF YUM
+
+ # Description
+   Here are some dishes which you need to go through before cooking something special!!! 
+        “Cooking is like love.  
+        It should be entered into with abandon or not at all.”  
+        “All happiness depends on a leisurely breakfast.” 
+        "Let food be thy medicine and medicine be thy food." - Hippocrates
+
+# Explanation 
+> This is a simple website food recipe website focusing on Javascript and API keys.
+
+>Basically, the title  of the website is Pinch Of Yum contating the logo besides it.
+
+>There is some sort of text for encouragement of the user to use the website.
+
+>The search bar is placed next to the text so that the user can search for the desired category of the food.
+
+>For the user recently searched information is given so that the user get's the idea to search.
+
+>On every refresh of the page the random meal appearing below the search bar will change and if the user wants the ingredeints of the random meal then the user can  click on the meal image so that the ingredients will be displayed in the form of modal.
+
+>To go back from the modal the close option is working.
+
+>After the searched categoary of the user the suggested meals will be displayed below in a grid , now scroll down and explore the website.
+
+
+# Screenshots
+img1
+![Alt text](<Screenshot 2023-12-20 095847.png>)
+
+img2
+![Alt text](<Screenshot 2023-12-20 100142.png>)
+![Alt text](<Screenshot 2023-12-20 100324.png>)
+
+img3(modal)
+![Alt text](<Screenshot 2023-12-20 100437.png>)
+
+
+# some more information
+This project is based on html,css and javascript. This project is bulit from scratch.
