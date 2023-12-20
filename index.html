@@ -9,7 +9,8 @@
 <body>
     <div class="main">
         <div id="name" class="header">
-           FoodOptions!
+            <img id="logo" src="download.png" alt="">
+           Pinch Of Yum 
         </div>
         
       <div class="text">
@@ -17,24 +18,25 @@
           “Cooking is like love. <br> It should be entered into with abandon or not at all.” <br> “All happiness depends on a leisurely breakfast.” <br> "Let food be thy medicine and medicine be thy food." - Hippocrates
           
                       <input type="text" id="placeholder" placeholder="Enter category">
-                      <button onclick="placeholder()">Search</button>
+                      <button  onclick="placeholder()">Search</button>
 
-      
-            <img id="randommealimage" alt="Random Meal">
-            <p id="nameofdish"></p>
+            <div id="temp">
+                <img id="randommealimage" alt="Random Meal">
+                <p id="nameofdish"></p>
+                <div id="modal">
+                    <div class="ingredients">
+
+                        <H2>Ingredients</H2>
+                        <img id="closeBtn" width="60px" src="close.png" alt="">
+                    </div>
+                    <ul id="unorderedlist"></ul>
+                </div>
+            </div>
 
             <div id="latest"></div>
       </div>
     </div>
-    <div class="mainmodal">
-        <div id="modal">
-         <H2>Ingredients</H2>
-         <ul id="unorderedlist"></ul>
-        </div>
-    </div>
 </body>
-
-
 <script src="app.js"></script>
 </html>
  

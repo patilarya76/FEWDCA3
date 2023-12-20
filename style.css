@@ -6,12 +6,8 @@
    
 }
 body{
-    background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31915164.jpg');
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    background-color: rgb(22, 21, 21);
-    background-blend-mode: overlay;
-    /* backdrop-filter: blur(5px) */
+    background:linear-gradient(rgb(77, 36, 78), rgb(24, 23, 24));
+    background-size: 100vw 100vh;
 }
 
 .header{
@@ -85,6 +81,7 @@ body{
     height: 90px;
     width: 50px;
     border-radius: 5px;
+    /* background-color: orange; */
 
 }
 
@@ -105,6 +102,8 @@ button{
   height: 50px;
   width: 55px;
   border-radius: 5px;
+  background-color: orange;
+  margin-right: 20px;
  }
  
  .mainmodal{
@@ -117,54 +116,62 @@ button{
     align-items: center;
     justify-content: center;
  }
+#temp{
+    position: relative;
 
+}
  #modal{
-    height: 350px;
+    height: 450px;
     width: 350px;
-    background-color: beige;
+    background-color: rgb(167, 167, 89);
     color: black;
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
     display: none;
- }
+    position: absolute;
+    top: 3vw;
+    left: 16vw;
+}
 
- H2{
+#unorderedlist{
+    text-align: left;
+    margin-left: 8vw;
+    margin-top: 2vw;
+}
+
+H2{
     text-align: center;
     margin-top: 20px;
- }
+    margin-left:90px;
+}
+.ingredients{
+    display: flex;
+    justify-content: space-between;
+}
+.ingredients img{
+    width:50px;
+
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
 
 
  @media only screen and (max-width: 900px) {
-    *{
-        margin: 0px;
-        padding: 0px;
-       /* background-color: rgb(255, 246, 246); */
-    
-       
-    }
-    body{
-        background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX31915164.jpg');
-        /* background-repeat: no-repeat; */
-        background-size: cover;
-        background-color: rgb(22, 21, 21);
-        background-blend-mode: overlay;
-        /* backdrop-filter: blur(5px) */
-    }
-    
     .header{
-        height: 70px;   
+        height: 60px;
        
     }
     #name{
         text-align: center;
-        padding-top: 30px;
-        font-size: 27px;
-        font-style: italic;
-        font-weight: bold;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        margin-right: -22px;
+        padding-top: 26px;
+        font-size: 33px;
+     
     
     }
     
@@ -176,14 +183,12 @@ button{
         height: 300px;
         color: rgb(178, 187, 55);
         text-align: center;
-        width:308px;
-        margin-left: 40px;
-        margin-top: 10px;
+        width:429px;
+        margin-left: -1px;
+        margin-top: 40px;
        border-radius: 10px;
-       font-weight: bolder;
-       font-style: oblique;
-       font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 14px;
+     
+        
         
     
     
@@ -191,32 +196,27 @@ button{
     #placeholder{
         margin-top: 40px;
         height: 40px;
-        width: 150px;
+        width: 321px;
         border-radius: 10px;
         border-width: 5px;
-        border-color: rgb(207, 178, 178);
-        text-decoration: rgb(231, 231, 231);
-        /* background-color: rgb(230, 206, 206); */
+     
     }
     
     #randommealimage{
-        margin-left: 16px;
-        margin-right: 150px;
+        margin-left: 83px;
+        margin-right: 100px;
         height: 250px;
-        width: 227px;
-        /* border: 10px; */
+        width: 250px;
         border:3px solid black;
         border-radius: 10px;
-        margin-top: 50px;
+        margin-top: 35px;
+        
      
     }
     #nameofdish{
-        margin-left: -30px;
+        margin-left: 11px;
         margin-top: 5px;
-        font-size: larger;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bolder;
-        color: blue;
+       
       
     }
     
@@ -224,12 +224,13 @@ button{
         height: 90px;
         width: 50px;
         border-radius: 5px;
+     
     
     }
     
     #latest{
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto auto;
         column-gap: 20px;
     }
     
@@ -240,9 +241,43 @@ button{
         border:5px solid black;
     
     }
-    button{
-      height: 40px;
-      width: 50px;
-      border-radius: 5px;
+    
+     
+    .mainmodal{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
      }
- }
+    #temp{
+        position: relative;
+    
+    }
+     #modal{
+        height: 450px;
+        width: 350px;
+        background-color: rgba(223, 119, 119, 0.836);
+        color: rgb(7, 7, 7);
+        font-style: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        display: none;
+        position: absolute;
+        top: 3vw;
+        left: 16vw;
+    }
+    
+   
+    #logo{
+        width: 73px;
+        height: 71px;
+        border-radius: 50px;
+        border: 2px solid black;
+    }
+    
+  
+}

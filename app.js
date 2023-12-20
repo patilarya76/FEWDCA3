@@ -1,14 +1,19 @@
 let el;
+const closeBtn = document.getElementById("closeBtn");
+closeBtn.addEventListener('click',function(){
+    modal.style.display = "none";
+})
 
 async function randomimage() {
     try {
         const output = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
         const information = await output.json();
-        el = information.meals[0];
         console.log('API Response:', information);
         const Mealinformation = information.meals[0];
         const imageUrl = Mealinformation.strMealThumb;
         const imagename = Mealinformation.strMeal;
+        el = Mealinformation.idMeal;
+        console.log(el)
         return { imageUrl, imagename };
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -72,8 +77,9 @@ async function modalingredients(el){
     let output= await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${el}`);
     let information= await output.json();
     for (let i=1;i<21;i++){
-        if (information.Meals[0][`strIngredients${i}`]!=""){
-            let a = information.Meals[0][`strIngredients${i}`]
+        if (information.meals[0][`strIngredient${i}`]!=""){
+            // console.log(information.meals[0])
+            let a = information.meals[0][`strIngredient${i}`]
             // console.log
             unorderedlist.innerHTML+=`<li>${a}</li>`
         }
@@ -85,11 +91,11 @@ async function modalingredients(el){
     console.log("error in fetching data",error)
   }
 }
-
+console.log(randommealimage)
 randommealimage.addEventListener('click',function(){
     console.log("Hello")
     modalingredients(el)
-    mainModal.style.display = "block";
+    modal.style.display = "block";
 
 })
 
